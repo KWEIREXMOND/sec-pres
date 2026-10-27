@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0b1f3a"/>
+  <path d="M32 8 51 16v15c0 13-8 21-19 25C21 52 13 44 13 31V16l19-8Z" fill="none" stroke="#d4a837" stroke-width="3"/>
+  <text x="32" y="37" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#fff">TSS</text>
+</svg>

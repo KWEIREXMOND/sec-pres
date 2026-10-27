@@ -1,0 +1,48 @@
+{
+  "name": "src-secretariat-pro",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A complete, record-backed digital secretariat for Tema Secondary School SRC leadership.",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0 -p 3000",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-3000}",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run test && npm run build",
+    "db:local:schema": "tsx scripts/apply-local-schema.ts",
+    "db:seed": "tsx scripts/seed.ts",
+    "db:reset": "tsx scripts/reset-local-db.ts",
+    "db:backup": "tsx scripts/backup.ts",
+    "maintenance:run": "tsx scripts/run-maintenance.ts"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.2.17",
+    "@supabase/supabase-js": "2.47.10",
+    "lucide-react": "0.468.0",
+    "next": "14.2.35",
+    "pdfkit": "0.15.0",
+    "postgres": "3.4.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "web-push": "3.6.7",
+    "zod": "3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@types/pdfkit": "0.13.9",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "@types/web-push": "3.6.4",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.49",
+    "tailwindcss": "3.4.17",
+    "tsx": "4.19.2",
+    "typescript": "5.7.3",
+    "vitest": "2.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
